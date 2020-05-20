@@ -8,9 +8,9 @@ public:
             v1[s[i] - 'a']++;
             v2[p[i] - 'a']++;
         }
-        if(v1 == v2) {
+        if(v1 == v2)
             return true;
-        }
+
         for(int i = p.length(); i < s.length(); i++) {
             v1[s[i] - 'a']++;
             v1[s[i - p.length()] - 'a']--;
