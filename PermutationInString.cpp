@@ -1,7 +1,8 @@
 class Solution {
 public:
     bool checkInclusion(string p, string s) {
-        vector <int> v1(26, 0), v2(26, 0);
+        vector <int> v1(26, 0);
+        vector <int> v2(26, 0);
         if(s.size() < p.size())
             return false;
         for(int i = 0; i < p.length(); i++) {
