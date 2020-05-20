@@ -21,8 +21,6 @@ public:
         count++;
         if(count == k)
             return root->val;
-
         return kthSmallest(root->right, k);
-
     }
 };
